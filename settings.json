@@ -1,4 +1,5 @@
 {
+  // General
   "json.schemaDownload.enable": true,
   "update.mode": "manual",
   "update.showReleaseNotes": false,
@@ -10,6 +11,7 @@
     ".env.*": "dotenv"
   },
 
+  // Workbench
   "workbench.startupEditor": "newUntitledFile",
   "workbench.list.smoothScrolling": true,
   "workbench.iconTheme": "symbols",
@@ -17,10 +19,11 @@
   "workbench.colorTheme": "Catppuccin Mocha",
   "workbench.editor.labelFormat": "short",
   "workbench.editor.empty.hint": "hidden",
-  "workbench.activityBar.location": "side",
+  "workbench.activityBar.location": "hidden",
+  "workbench.statusBar.visible": false,
   "workbench.layoutControl.enabled": false,
-  "symbols.hidesExplorerArrows": false,
 
+  //Editor
   "editor.fontSize": 14,
   "editor.lineHeight": 1.8,
   "editor.rulers": [80, 120],
@@ -29,9 +32,9 @@
   "editor.cursorSmoothCaretAnimation": "on",
   "editor.smoothScrolling": true,
   "editor.parameterHints.enabled": true,
-  "editor.fontFamily": "JetBrainsMono Nerd Font",
-  "window.zoomLevel": 1,
+  "editor.fontFamily": "Fira Code",
   "editor.fontLigatures": true,
+  "window.zoomLevel": 1,
   "editor.acceptSuggestionOnCommitCharacter": true,
   "editor.accessibilitySupport": "off",
   "editor.semanticHighlighting.enabled": true,
@@ -46,7 +49,8 @@
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": "explicit"
   },
-
+  
+  // Explorer
   "explorer.compactFolders": false,
   "explorer.confirmDelete": false,
   "explorer.confirmDragAndDrop": false,
@@ -60,20 +64,24 @@
     ".env": ".env*"
   },
 
+
+  // Terminal
   "terminal.integrated.fontSize": 14,
-  "terminal.integrated.fontFamily": "JetBrainsMono Nerd Font",
+  "terminal.integrated.fontFamily": "Fira Code", //'JetBrainsMono Nerd Font'
   "terminal.external.windowsExec": "wt",
   "terminal.integrated.defaultProfile.windows": "Git Bash",
 
+  // Security
   "security.workspace.trust.banner": "never",
   "security.workspace.trust.startupPrompt": "never",
   "security.workspace.trust.untrustedFiles": "open",
   "security.workspace.trust.enabled": false,
 
+  // Extensions settings
   "apc.activityBar": {
-    "size": 48,
+    "size": 42,
     "itemMargin": 8,
-    "itemSize": 32
+    "itemSize": 38
   },
   "apc.electron": {
     "titleBarStyle": "hidden",
@@ -87,7 +95,7 @@
     "frame": false
   },
   "apc.header": {
-    "height": 36
+    "height": 35
   },
   "apc.listRow": {
     "height": 24
@@ -106,7 +114,6 @@
     ".monaco-workbench .monaco-list:not(.element-focused):focus:before": "display: none;",
     ".window-appicon": "display: none;"
   },
-  "symbols.hidesExplorerArrows": false,
   "autoimport.showNotifications": false,
   "prettier.trailingComma": "all",
   "github.copilot.enable": {
@@ -117,6 +124,7 @@
   },
   "git.suggestSmartCommit": false,
 
+  // Language specific settings
   "javascript.suggest.autoImports": true,
   "javascript.updateImportsOnFileMove.enabled": "always",
   "typescript.suggest.autoImports": true,
@@ -143,5 +151,8 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "vsintellicode.modify.editor.suggestSelection": "choseToUpdateConfiguration",
-  "breadcrumbs.enabled": false
+  "breadcrumbs.enabled": false,
+  "symbols.hidesExplorerArrows": false,
+  "window.density.editorTabHeight": "compact"
 }
+
