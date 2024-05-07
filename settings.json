@@ -5,7 +5,7 @@
   "update.showReleaseNotes": false,
   "window.titleBarStyle": "native",
   "window.commandCenter": false,
-  "window.menuBarVisibility": "hidden",
+  "window.menuBarVisibility": "compact",
   "window.restoreWindows": "all",
   "files.associations": {
     ".env.*": "dotenv"
@@ -14,13 +14,12 @@
   // Workbench
   "workbench.startupEditor": "newUntitledFile",
   "workbench.list.smoothScrolling": true,
-  "workbench.iconTheme": "symbols",
   "workbench.productIconTheme": "fluent-icons",
-  "workbench.colorTheme": "Catppuccin Mocha",
+  "workbench.colorTheme": "Min Dark",
   "workbench.editor.labelFormat": "short",
   "workbench.editor.empty.hint": "hidden",
   "workbench.activityBar.location": "hidden",
-  "workbench.statusBar.visible": false,
+  "workbench.statusBar.visible": true,
   "workbench.layoutControl.enabled": false,
 
   //Editor
@@ -49,9 +48,6 @@
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": "explicit"
   },
-  
-  // Explorer
-  "explorer.compactFolders": false,
   "explorer.confirmDelete": false,
   "explorer.confirmDragAndDrop": false,
   "explorer.sortOrder": "foldersNestsFiles",
@@ -64,12 +60,12 @@
     ".env": ".env*"
   },
 
-
   // Terminal
   "terminal.integrated.fontSize": 14,
   "terminal.integrated.fontFamily": "Fira Code", //'JetBrainsMono Nerd Font'
   "terminal.external.windowsExec": "wt",
   "terminal.integrated.defaultProfile.windows": "Git Bash",
+  "terminal.integrated.cwd": "${workspaceFolder}",
 
   // Security
   "security.workspace.trust.banner": "never",
@@ -125,6 +121,7 @@
   "git.suggestSmartCommit": false,
 
   // Language specific settings
+  "editor.formatOnSave": true,
   "javascript.suggest.autoImports": true,
   "javascript.updateImportsOnFileMove.enabled": "always",
   "typescript.suggest.autoImports": true,
@@ -153,6 +150,34 @@
   "vsintellicode.modify.editor.suggestSelection": "choseToUpdateConfiguration",
   "breadcrumbs.enabled": false,
   "symbols.hidesExplorerArrows": false,
-  "window.density.editorTabHeight": "compact"
+  "terminal.integrated.profiles.windows": {
+    "PowerShell": {
+      "source": "PowerShell",
+      "icon": "terminal-powershell"
+    },
+    "Command Prompt": {
+      "path": [
+        "${env:windir}\\Sysnative\\cmd.exe",
+        "${env:windir}\\System32\\cmd.exe"
+      ],
+      "args": [],
+      "icon": "terminal-cmd"
+    },
+    "Git Bash": {
+      "source": "Git Bash"
+    },
+    "Ubuntu-20.04 (WSL)": {
+      "path": "C:\\Windows\\System32\\wsl.exe",
+      "args": ["-d", "Ubuntu-20.04"]
+    },
+    "Cygwin": {
+      "path": "C:\\cygwin64\\bin\\bash.exe",
+      "args": ["--login"]
+    }
+  },
+  "git-graph.commitDetailsView.fileView.type": "File List",
+  "window.density.editorTabHeight": "compact",
+  "workbench.iconTheme": "symbols",
+  "explorer.compactFolders": false,
+  "screencastMode.mouseIndicatorColor": "#FFF000"
 }
-
