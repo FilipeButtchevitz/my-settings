@@ -25,13 +25,13 @@
   //Editor
   "editor.fontSize": 14,
   "editor.lineHeight": 1.8,
-  "editor.rulers": [80, 120],
+  // "editor.rulers": [80, 120],
   "editor.tabSize": 2,
   "editor.suggestSelection": "first",
   "editor.cursorSmoothCaretAnimation": "on",
   "editor.smoothScrolling": true,
   "editor.parameterHints.enabled": true,
-  "editor.fontFamily": "Fira Code",
+  "editor.fontFamily": "Jetbrains Mono",
   "editor.fontLigatures": true,
   "window.zoomLevel": 1,
   "editor.acceptSuggestionOnCommitCharacter": true,
@@ -62,9 +62,9 @@
 
   // Terminal
   "terminal.integrated.fontSize": 14,
-  "terminal.integrated.fontFamily": "Fira Code", //'JetBrainsMono Nerd Font'
+  "terminal.integrated.fontFamily": "JetBrains Mono", //'JetBrainsMono Nerd Font'
   "terminal.external.windowsExec": "wt",
-  "terminal.integrated.defaultProfile.windows": "Git Bash",
+  "terminal.integrated.defaultProfile.windows": "Windows PowerShell",
   "terminal.integrated.cwd": "${workspaceFolder}",
 
   // Security
@@ -179,5 +179,11 @@
   "window.density.editorTabHeight": "compact",
   "workbench.iconTheme": "symbols",
   "explorer.compactFolders": false,
-  "screencastMode.mouseIndicatorColor": "#FFF000"
+  "screencastMode.mouseIndicatorColor": "#FFF000",
+  "animations.Install-Method": "Apc Customize UI++",
+  "apc.imports": [
+    "file:///c:/Users/youruser/.vscode/extensions/brandonkirbyson.vscode-animations-2.0.2/dist/updateHandler.js"
+  ],
+  "tabnine.experimentalAutoImports": true,
+  "git.openRepositoryInParentFolders": "always"
 }
