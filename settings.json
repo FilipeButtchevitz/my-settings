@@ -15,7 +15,6 @@
   "workbench.startupEditor": "newUntitledFile",
   "workbench.list.smoothScrolling": true,
   "workbench.productIconTheme": "fluent-icons",
-  "workbench.colorTheme": "Min Dark",
   "workbench.editor.labelFormat": "short",
   "workbench.editor.empty.hint": "hidden",
   "workbench.activityBar.location": "hidden",
@@ -72,6 +71,21 @@
   "security.workspace.trust.startupPrompt": "never",
   "security.workspace.trust.untrustedFiles": "open",
   "security.workspace.trust.enabled": false,
+
+  // Folder Icons
+  "symbols.folders.associations": {
+    "_components": "folder-auth",
+    "hooks": "folder-shared",
+    "constants": "folder-target"
+  },
+
+  //File Icons
+  "symbols.files.associations": {
+    ".env.example": "gear",
+    ".env.staging": "gear",
+    ".env.production": "gear",
+    ".env.development": "gear"
+  },
 
   // Extensions settings
   "apc.activityBar": {
@@ -182,8 +196,21 @@
   "screencastMode.mouseIndicatorColor": "#FFF000",
   "animations.Install-Method": "Apc Customize UI++",
   "apc.imports": [
-    "file:///c:/Users/youruser/.vscode/extensions/brandonkirbyson.vscode-animations-2.0.2/dist/updateHandler.js"
+    "file:///c:/Users/yourUser/.vscode/extensions/brandonkirbyson.vscode-animations-2.0.2/dist/updateHandler.js"
   ],
   "tabnine.experimentalAutoImports": true,
-  "git.openRepositoryInParentFolders": "always"
+  "git.openRepositoryInParentFolders": "always",
+  "tabby.api.endpoint": "http://localhost:8080",
+  "tabby.experimental": {},
+  "react-native-tools.showUserTips": false,
+  "cSpell.language": "en,pt-BR",
+  "workbench.colorTheme": "Min Dark",
+  "cSpell.userWords": [
+    "LOCALSTORAGE",
+    "nativewind",
+    "Pressable",
+    "tanstack",
+    "whatsapp"
+  ]
+
 }
