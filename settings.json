@@ -115,7 +115,6 @@
     ".vscode": true
     // "node_modules": true
   },
-  "workbench.iconTheme": "symbols",
   "update.enableWindowsBackgroundUpdates": false,
   "update.mode": "manual",
   "terminal.integrated.gpuAcceleration": "on",
@@ -140,13 +139,15 @@
   "apc.activityBar": {
     "position": "bottom",
     "hideSettings": true,
-    "size": 48,
-    "itemMargin": 8,
-    "itemSize": 32
+    "size": 40,
+    "itemMargin": 0,
+    "itemSize": 40
   },
   "editor.hideCursorInOverviewRuler": true,
   "editor.minimap.enabled": false,
-  "window.titleBarStyle": "native",
+  "window.titleBarStyle": "custom",
+  "window.menuBarVisibility": "toggle",
+  "window.titleSeparator": " • ",
   "window.customTitleBarVisibility": "never",
   "apc.electron": {
     "titleBarStyle": "hiddenInset",
@@ -166,8 +167,14 @@
     "fontSize": 13,
     "height": 24,
   },
+  "apc.menubar.compact": true,
+  "apc.sidebar.titlebar": {
+    "height": 36
+  },
   "apc.stylesheet": {
-    ".title-label > h2": "display: none",
+    ".title-label": "display: none !important",
+    ".composite.title": "display: block !important",
+    // ".title-label > h2": "display: none",
     ".editor-actions": "display: none",
     ".nosidebar .inline-tabs-placeholder": "width: 75px",
     ".pane-header": "padding: 0 8px",
@@ -176,7 +183,10 @@
     ".monaco-list-row": "border-radius: 4px;",
     ".monaco-workbench .monaco-list:not(.element-focused):focus:before": "display: none;"
   },
-  "editor.scrollbar.vertical": "hidden",
+  "editor.scrollbar.vertical": "auto",
+  "editor.scrollbar.horizontal": "auto",
+  "editor.scrollbar.verticalScrollbarSize": 6,
+  "editor.scrollbar.horizontalScrollbarSize": 6,
   "explorer.sortOrder": "foldersNestsFiles",
   "explorer.fileNesting.patterns": {
     "package.json": ".eslint, prettier, tsconfig, vite, pnpm-, bun.lockb, nest, package-lock*",
@@ -257,7 +267,7 @@
     "webm",
     "WEBPUSH"
   ],
-  "workbench.statusBar.visible": false,
+  "workbench.statusBar.visible": true,
   "editor.tokenColorCustomizations": {
     "textMateRules": [
       {
@@ -275,7 +285,9 @@
     "suppressIntegrationRequestTimedOutWarning": true
   },
   "liveServer.settings.donotShowInfoMsg": true,
-  "workbench.preferredDarkColorTheme": "Material Theme Darker",
   "scm.inputFontSize": 13,
-  "window.density.editorTabHeight": "compact"
+  "window.density.editorTabHeight": "compact",
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "workbench.preferredDarkColorTheme": "Min Dark",
+  "workbench.iconTheme": "glyph.legacy"
 }
